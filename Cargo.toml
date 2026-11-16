@@ -1,0 +1,9 @@
+[package]
+name = "quic-demo"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+quinn = "0.11.12"
+rcgen = { version = "0.14.10", default-features = false, features = ["crypto", "ring"] }
+tokio = { version = "1.54.1", features = ["rt-multi-thread", "macros"] }
